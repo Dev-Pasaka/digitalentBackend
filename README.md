@@ -20,3 +20,74 @@ A Fat JAR is a Java Archive (JAR) file that contains all the necessary dependenc
    cd /path/to/your/fat-jar-directory
    run : java -jar fat.jar
 
+# Create User - POST Request
+
+## Description
+
+This Markdown document provides instructions for making a POST request to create a user with the specified details. The request includes a JSON request body containing user information.
+
+## Request
+
+- **Method**: POST
+- **URL**: `http://0.0.0.0:8080/createUser`
+
+### Request Body
+
+The request body should be a JSON object containing the following user details:
+
+```json
+{
+    "firstName": "Pasaka",
+    "lastName": "Mutuku",
+    "age": 21,
+    "town": "Thika",
+    "gender": "Male"
+}
+
+## Request
+
+- **Method**: POST
+- **URL**: `http://0.0.0.0:8080/updateUser?id=6544a352e04fd8423fd0f70f`
+
+### Request Body
+
+The request body should be a JSON object containing the updated user details:
+
+```json
+{
+    "firstName": "Lazarus",
+    "lastName": "Mutuku",
+    "age": 21,
+    "town": "Thika",
+    "gender": "Male"
+}
+
+### Request
+
+```http
+GET http://0.0.0.0:8080/getUser?id=6544a1b3b310b15f98e5545b
+
+HTTP/1.1 200 OK
+
+{
+    "userId": "6544a1b3b310b15f98e5545b",
+    "firstName": "Pasaka",
+    "lastName": "Mutuku",
+    "age": 21,
+    "town": "Thika",
+    "gender": "Male"
+}
+
+### Request
+
+```http
+DELETE http://0.0.0.0:8080/deleteUser?id=6544a1b3b310b15f98e5545b
+
+HTTP/1.1 200 OK
+
+{
+    "status": false,
+    "message": "User was deleted successfully"
+}
+
+
