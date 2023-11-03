@@ -7,6 +7,7 @@ A Fat JAR is a Java Archive (JAR) file that contains all the necessary dependenc
 ## Prerequisites
 
 - You must have Java (JRE or JDK) installed on your computer.
+-  You can replace the mongoDB url with yours sting but there's no need because the database id hosted in mongoDB Cloud
 
 ## Steps
 
